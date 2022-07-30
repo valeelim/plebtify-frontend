@@ -60,7 +60,7 @@ export default function Player({ token, trackUri, chooseTrack, play }) {
 
             player.addListener('player_state_changed', async (state) => {
                 if (!state || !player) return
-                console.log('player state changed', state)
+                // console.log('player state changed', state)
                 if (!state.track_window.current_track) {
                     setTrack(track)
                     setDuration(0)
