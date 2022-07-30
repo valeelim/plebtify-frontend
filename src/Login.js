@@ -8,7 +8,7 @@ export default function Login() {
             <Flex direction='column' align='center' h='60%'>
                 <Image src="https://img.icons8.com/plasticine/300/000000/spotify--v2.png" alt=''/>
                 <Text color='white' fontSize='5rem' fontFamily='Rubik Moonrocks'>Plebtify</Text>
-                <Link py='20px' href='http://localhost:3001/login' style={{ textDecoration: 'none' }}>
+                <Link py='20px' href='https://plebtify-backend.herokuapp.com/login' style={{ textDecoration: 'none' }}>
                     <Button borderRadius='40px' colorScheme='green' w='15vw' h='7vh' _hover={{ transition: 'all 0.1s ease-in-out', transform: 'scale(1.1)'}}>
                         <Text fontSize='1.2vw' fontWeight='700'>Login With Spotify</Text>
                     </Button>

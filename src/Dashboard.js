@@ -8,8 +8,8 @@ import Player from './Player'
 import { Flex, Text, Input, InputLeftElement, InputGroup, Center } from '@chakra-ui/react'
 import { SearchIcon } from '@chakra-ui/icons'
 
-export default function Dashboard({ code, state }) {
-    const token = useAuth(code, state)
+export default function Dashboard({ code }) {
+    const token = useAuth(code)
     const [search, setSearch] = useState('')
     const [searchResult, setSearchResult] = useState([])
     const [playingTrack, setPlayingTrack] = useState()
