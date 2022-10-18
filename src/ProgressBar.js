@@ -16,7 +16,7 @@ export default function ProgressBar({ token, isPaused, track, deviceId, position
     const handleChangeEnd = (val) => {
         axios.post('https://plebtify-backend.herokuapp.com/seek', { token, position_ms: val, deviceId })
             .then(setProgress(val))
-            .catch(err => console.error('seek thingies', err))
+            .catch(err => console.error('seek error', err))
         setDrag(false)
     }
 

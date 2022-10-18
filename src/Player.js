@@ -51,11 +51,11 @@ export default function Player({ token, trackUri, chooseTrack, play }) {
 
             player.addListener('ready', async ({ device_id }) => {
                 setDeviceId(device_id)
-                console.log('Ready with Device Id', device_id, 'lmao', token)
+                // console.log('Ready with Device Id', device_id, 'lmao', token)
             })
 
             player.addListener('not_ready', ({ device_id }) => {
-                console.log('Device ID has gone offline', device_id)
+                // console.log('Device ID has gone offline', device_id)
             })
 
             player.addListener('player_state_changed', async (state) => {

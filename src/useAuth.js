@@ -17,7 +17,7 @@ export default function useAuth(code) {
                 window.history.pushState({}, null, '/')
             })
             .catch(err => {
-                console.log(err)
+                // console.log(err)
                 window.location = '/'
             })
     }, [code])
@@ -33,7 +33,7 @@ export default function useAuth(code) {
                     setExpiresIn(res.data.expiresIn)
                 })
                 .catch(err => {
-                    console.log(err)
+                    // console.log(err)
                     window.location = '/'
                 })
 
